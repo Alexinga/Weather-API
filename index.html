@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./weather.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <section id="weather-wrapper">
+        <h1 class="intro">Welcome to my Weather App</h1>
+        <div class="weather-heading">
+            <input id="search" type="search" placeholder="search location...">
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="weather-content loading">
+            <h2 class="city">Weather in Search...</h2>
+            <h2 class="temperature">9.82°C</h2>
+            <img src="" alt="icon-img" class="icon"></img>
+            <h2 class="weather-type">Broken Clouds</h2>
+            <h4>Humidity: <span class="humid">66%</span></h4>
+            <h4>Wind: <span class="wind">3.6km/h</span></h4>
+        </div>
+        <div class="weather-error">
+            <h2 class="error"></h2>
+        </div>
+    </section>
+</body>
+
+</html>
